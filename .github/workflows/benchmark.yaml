@@ -1,0 +1,10 @@
+on: repository_dispatch
+
+jobs:
+  build:
+    name: Trigger received to Run Benchmark 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Benchmark
+        run: |
+          echo "Run Benchmark"
