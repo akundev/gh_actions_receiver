@@ -13,4 +13,5 @@ jobs:
       - name: Run Benchmark
         run: |
           echo "Run Benchmark"
-          echo "Env: ${{ github.event.inputs.tag_number }}" 
+          echo "ref: ${{ github.event.ref }}" 
+          echo "tag_number: ${{ github.event.inputs.tag_number }}" 
